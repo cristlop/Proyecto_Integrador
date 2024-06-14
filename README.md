@@ -1,4 +1,4 @@
-# Proyecto_Integrador
+# Proyecto Integrador 2024
 
 Repositorio de GitHub: [https://github.com/cristlop/Proyecto_Integrador](https://github.com/cristlop/Proyecto_Integrador)
 
@@ -38,11 +38,24 @@ Este repositorio contiene todas las fuentes, datos y el código necesario para r
 - **TRM**: tasa representativa del mercado obtenida del [Banco de la República de Colombia](https://www.banrep.gov.co/es/estadisticas/trm)
 - **IPC, PIB**: índice de precios al consumidor (IPC) y producto interno bruto (PIB) obtenidos del [DANE (Departamento Administrativo Nacional de Estadística)](https://www.dane.gov.co)
 
-## Conclusiones
-1. **Incapacidad para alcanzar MAE esperado**: a pesar de que el modelo XGBoost obtuvo buenos resultados, no fue posible alcanzar el MAE esperado inferior a 100 COP por cada acción. Solo se logró con 2 de 15.
+## Principales Conclusiones
+1. **Meta de MAE alcanzada**: Se cumplió con la meta de MAE menor a 50 en 10 de 13 acciones, demostrando alta precisión.
 
-2. **Modelos alternativos**: entre los diferentes modelos evaluados, XGBoost demostró ser el más efectivo en términos de precisión. Comparado con LSTM, Random Forest, SARIMAX, y ARIMA, fue la mejor opción para la predicción de precios de cierre de acciones en el mercado colombiano.
+2. **Random Forest mejor modelo**: Random Forest superó a LSTM, XGBoost, SARIMAX y ARIMA en precisión, siendo la mejor opción para el mercado colombiano.
 
-3. **Desafíos de la volatilidad del mercado**: la alta volatilidad del mercado colombiano se mantiene como un reto importante para alcanzar una mayor precisión en las predicciones.
+3. **Facilidades con Hugging Face**: Subir el modelo a Hugging Face facilita su uso y reduce el tiempo de ejecución, simplificando la implementación.
 
-4. **Beneficios de Hugging Face**: subir el pipeline y el modelo XGBoost a Hugging Face facilita el acceso y uso del modelo preentrenado, reduciendo significativamente el tiempo de ejecución y simplificando el proceso de implementación.
+## Resultados del Modelo Random Forest
+- **PFGRUPSURA.CL**: MAE: 253.13, RMSE: 486.71
+- **PFBCOLOM.CL**: MAE: 14.44, RMSE: 21.59
+- **ISA.CL**: MAE: 31.71, RMSE: 53.53
+- **GRUPOARGOS.CL**: MAE: 27.06, RMSE: 55.79
+- **CEMARGOS.CL**: MAE: 13.89, RMSE: 28.64
+- **CIB**: MAE: 0.02, RMSE: 0.03
+- **EC**: MAE: 0.01, RMSE: 0.01
+- **ICOLCAP.CL**: MAE: 9.01, RMSE: 14.28
+- **PFDAVVNDA.CL**: MAE: 3852.80, RMSE: 4761.81
+- **CELSIA.CL**: MAE: 69.55, RMSE: 123.16
+- **TERPEL.CL**: MAE: 6.10, RMSE: 9.97
+- **GRUPOSURA.CL**: MAE: 45.34, RMSE: 86.35
+- **GEB.CL**: MAE: 36.53, RMSE: 84.55
