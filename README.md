@@ -34,9 +34,9 @@ Este repositorio contiene todas las fuentes, datos y el código necesario para r
 5. Seguir las instrucciones dentro del notebook para entrenar los modelos y generar predicciones.
 
 ## Fuentes de Datos
-- **Acciones**: Datos históricos de precios de cierre de acciones obtenidos de [Yahoo Finance](https://finance.yahoo.com)
-- **TRM**: Tasa Representativa del Mercado (TRM) obtenida del [Banco de la República de Colombia](https://www.banrep.gov.co/es/estadisticas/trm)
-- **IPC, PIB**: Índice de Precios al Consumidor (IPC) y Producto Interno Bruto (PIB) obtenidos del [DANE (Departamento Administrativo Nacional de Estadística)](https://www.dane.gov.co)
+- **Acciones**: datos históricos de precios de cierre de acciones obtenidos de [Yahoo Finance](https://finance.yahoo.com)
+- **TRM**: tasa representativa del mercado obtenida del [Banco de la República de Colombia](https://www.banrep.gov.co/es/estadisticas/trm)
+- **IPC, PIB**: índice de precios al consumidor (IPC) y producto interno bruto (PIB) obtenidos del [DANE (Departamento Administrativo Nacional de Estadística)](https://www.dane.gov.co)
 
 ## Conclusiones
 1. **Incapacidad para alcanzar MAE esperado**: a pesar de que el modelo XGBoost obtuvo buenos resultados, no fue posible alcanzar el MAE esperado inferior a 100 COP por cada acción. Solo se logró con 2 de 15.
